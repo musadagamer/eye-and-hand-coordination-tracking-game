@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="game.style.css">
+    </head>
+    <body>
+        <div class="square">
+            <button id="mybtn">click me hehe</button>
+<audio id="pop" src="comedy_pop_finger_in_mouth_001.mp3" preload="auto"></audio>
+
+<script>
+const btn = document.getElementById('mybtn');
+const a = document.getElementById('pop');
+
+btn.addEventListener('click', () => {
+  a.currentTime = 0;
+  a.play().catch(err => console.error('Playback failed:', err));
+});
+</script>
+            </button>
+        </div>
+    </body>
+    
+</html>
